@@ -28,3 +28,24 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+# Añadir Tailwind
+## ejecutando los siguientes: 
+`npm install -D tailwindcss postcss autoprefixer`
+`npx tailwindcss init -p`
+
+## Añadiendo la configuración tailwind.config.js:
+![alt text](/public/markdown-images/tailwind-config.png)
+```js
+ content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+```
+
+## Importar los estilos al index.css: 
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
