@@ -1,7 +1,10 @@
+import { Outlet } from "react-router-dom"
+
 export const DashboardLayout = () => {
     return (
-      <div>
-        <div>DashboardLayout</div>
-      </div>
+      <>
+        <h1>DashboardLayout</h1>
+        <Outlet />
+      </>
     )
   }
